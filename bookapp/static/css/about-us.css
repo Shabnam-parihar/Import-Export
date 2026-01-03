@@ -1,0 +1,57 @@
+body {
+    font-family: "DM Serif Display", "Odoo Unicode Support Noto", serif;
+    min-height: 100%;
+    font-size: 18px;  
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.content{
+    max-width: 1400px; /* Set your content width */
+    margin: 0 auto;   /* Center the content */    
+}
+:root {
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+}
+.maintag{
+    position: relative;
+    z-index: 1;   
+}
+
+.headertag{
+    color: white;
+}
+.headersection{
+    position: fixed;       /* Keeps it in place */
+   
+    width: 100%;         
+    padding: 20px;
+    text-align: center;
+     background-color: #63A9B2;
+}
+.containerheader{
+    float: left;
+    margin-right: 40px;
+}
+.containerheader ul li{   /* Keeps it in place */       
+    display: inline;
+    padding: 20px;
+    list-style: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+     vertical-align: middle;
+
+}
+.containerheader ul li img{
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}

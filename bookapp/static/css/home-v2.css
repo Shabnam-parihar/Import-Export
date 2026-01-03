@@ -1,0 +1,449 @@
+body {
+    font-family: "DM Serif Display", "Odoo Unicode Support Noto", serif;
+    min-height: 100%;
+    font-size: 18px; 
+    overflow-x: hidden; 
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.content{
+    max-width: 1400px; /* Set your content width */
+    margin: 0 auto;   /* Center the content */ 
+    
+}
+:root {
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+}
+.maintag{
+    position: relative;
+    z-index: 1;   
+}
+header{
+  position:fixed; /* Keeps header on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Example height */
+  background-color: #63A9B2;
+  z-index: 1000; /* Ensures header stays above content */
+}
+.flex-gap{
+    display: flex;
+    gap: 600px;
+}
+.header-links{
+    display: flex;
+    gap: 80px;
+}
+.link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.headersection{
+    margin-top: 20px;
+}
+.containerheader{
+    float: left;
+    margin-right: 12px;
+    display: flex;
+    gap: 12px;
+}
+.containerheader ul li{   /* Keeps it in place */       
+    display: inline;
+    padding: 20px;
+    list-style: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+     vertical-align: middle;
+
+}
+.containerheader ul li img{
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.headingspan{
+    font-size: calc(1.425rem + 2.1vw);
+}
+.maincontainer{
+    background-color:#63A9B2;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.subcontainer h2{
+    font-family: "DM Serif Display", "Odoo Unicode Support Noto", serif;
+    font-size: 40px;
+    color: white;
+}
+.subcontainer{
+    text-align: center;
+}
+.auto-slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+ 
+}
+div#slider { overflow: hidden; width: 100%;  height: 400px;  }
+div#slider figure img {  
+    width: 100%; 
+    height: auto;
+    background-size: contain;   
+    }
+div#slider figure { 
+  position: relative;
+  width: 400%;
+  height: 400px;
+  display: flex; 
+  margin: 0;
+  left: 0;
+  animation: 55s sliding ease infinite; 
+  
+}
+@keyframes sliding{
+            0%{left: 0%; }
+            20%{left: -100%;}
+            40%{left: -200%;}
+            60%{left: -300%;}
+            80%{left: -400%;}
+            100%{left: 0%;}
+        }        
+        
+@keyframes indicating{
+            from{
+                left: -100%;
+            }
+            to{
+                left: 0;
+            }
+}  
+.about_detail{
+    display: inline-block;
+    width: 65%;
+    vertical-align: middle;
+}
+.about_heading{
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 80px;
+    text-align: center;
+    z-index: -1;
+    background: url(../images/trade.png) center / cover no-repeat;
+    color: white;
+    top: 0px;
+    left: 0px;
+}
+.about_heading p{
+    text-decoration: double;
+    position: relative;
+}
+p.underline::after {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width of paragraph */
+  height: 6px; /* Thickness of the line */
+  background-color: #63A9B2; /* Line color */
+}
+.about_detail p{
+    margin-bottom: 20px;
+    line-height: 1.6;
+    
+}
+#about_banner{
+    padding-bottom: 50px;
+}
+.about_detail h1{
+    margin-bottom: 20px;
+    line-height: 1.6;
+
+}
+.category-container{
+    margin-bottom: 60px;
+}
+
+  .circle-card h2{
+     margin-top: 100px;
+  }
+  /* Circular card container */
+  .circle-card {
+    width: 250px;              /* Card size */
+    height: 250px;
+    overflow: hidden;          /* Ensures image stays inside */
+    box-shadow: 0 4px 18px #63A9B2; /* Optional shadow */
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 80px;
+  }
+  .caption{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .circle-card img{
+    width: 100%;
+    height: 200px;
+  }
+  
+.category-container ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    border-radius: 50%;
+    border-color: #63A9B2;
+    border-style: solid;       /* Required for border to be visible */
+    border-width: 5px;  
+    
+}
+.checkclass ul li{
+    vertical-align: middle;
+    font-weight: bold;
+    list-style: none;
+
+}
+.checkclass{
+    padding-top: 10px;
+    line-height: 1.8;
+}
+.checkclass ul li img{
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+
+}
+.containerheader  ul li .call{
+    width: 15px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.containerheader ul{
+    text-align: center;
+}
+section.product-type-section{
+    position: relative;
+    padding-top: 80px !important;
+    padding-bottom: 40px !important;
+}
+section.product-type-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/categories.jpg') center/cover no-repeat;
+    filter: blur(2px); /* Blur effect */
+    transform: scale(1.1); /* Prevents edges from showing */
+    z-index: -1; /* Keep it behind content */
+}
+.product-type-container p{
+      color: white;
+      text-align: center;
+      line-height: 1.8;
+}
+.footersection{
+    position: fixed;  
+    bottom: 0;            /* Stick to the top */
+    left: 0;
+    width: 100%;         
+    background-color:#63A9B2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+}
+.paharagraph {
+    width: 500px;              /* Fixed width container */
+    word-wrap: break-word;     /* Break long words if needed */
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding-top: 10px;
+   line-height: 1.8; /* 1.8 times the font size */
+}
+.paharagraph, ul li img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.containerheader ul li{   /* Keeps it in place */       
+    padding: 20px;
+    list-style: none;
+    font-weight: bold;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.bannersection{
+    padding-top: 80px;
+    margin-bottom: 40px;
+}
+.bannercontainer{
+    display: flex;
+    gap: 20px;
+}
+.bannerright{
+    width: 30%;
+    
+    vertical-align: middle;
+}
+.bannerleft{
+    width: 30%;
+    
+    vertical-align: middle;
+}
+.aboutbanner {
+    
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+}
+.aboutbanner p{
+    font-weight: bold;
+    font-size: calc(1.525rem + 3.3vw);
+    line-height: 1.2; 
+}
+.discoverbutton{
+    padding-top: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.button{
+    border-radius: 10px;
+    padding: 0.8rem 3.0rem ;
+    font-size: 1.25rem;
+    border-radius: 10rem;
+    background-color: #63A9B2;
+}
+.discoverbutton a{
+    color: white;
+    text-decoration: none;
+}
+.aboutuscontainer{
+    margin-top: 60px;
+    display: inline-block;
+}
+.contactuscontainer{
+    display: inline-block;
+    margin-top: 60px;
+}
+.checkclass{
+    padding-top: 10px;
+    line-height: 1.8;
+}
+.contactdetail ul li img{
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+
+}
+.contactuscontainer{
+    padding-left: 200px;
+}
+.aboutdetailcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.contactdetail ul li{
+    list-style: none;
+    line-height: 1.8;
+}
+.socialmedia ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+.socialmedia{
+    margin-top: 20px;
+}
+.fa{
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.fa-facebook {
+  background: #63A9B2;
+  color: white;
+}
+.fa-instagram {
+  background: #63A9B2;
+  color: white;
+}
+.fa-linkedin {
+  background: #63A9B2;
+  color: white;
+}
+.aboutusection{
+    padding-bottom: 80px;
+}
+.intro_image1{
+    display: flex;
+    box-shadow: rgb(99, 169, 178) 0px 4px 18px;
+}
+.intro_image2{
+    display: flex;
+    box-shadow: rgb(99, 169, 178) 0px 4px 18px;
+    margin-top: 100px;
+}
+.intro_image1 img{
+     width: 200px;
+     margin-right: 40px;
+     vertical-align: middle;
+       margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 120px;
+}
+.intro_image2 img{
+    width: 200px;
+    margin-left: 40px;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.intro_image2 p{
+        margin-left: 220px;
+}
+.intro_description{
+    vertical-align: middle;
+    margin-top: 60px;
+}
+.intro_description p {
+  line-height: 1.8; /* 1.8 times the font size */
+  width: 800px;
+}
+.about_company{
+    font-size: 1.2em;
+
+}
+
+
+
+
+
+
+
+
