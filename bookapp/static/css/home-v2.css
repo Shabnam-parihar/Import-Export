@@ -92,46 +92,36 @@ header{
 .subcontainer{
     text-align: center;
 }
-.auto-slider{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+#slider{
     padding-top: 100px;
- 
 }
-div#slider { overflow: hidden; width: 100%;  height: 400px;  }
-div#slider figure img {  
-    width: 100%; 
-    height: auto;
-    background-size: contain;   
-    }
-div#slider figure { 
-  position: relative;
-  width: 400%;
-  height: 400px;
-  display: flex; 
-  margin: 0;
-  left: 0;
-  animation: 55s sliding ease infinite; 
-  
+.bannerimage{
+    width: 100%;
 }
-@keyframes sliding{
-            0%{left: 0%; }
-            20%{left: -100%;}
-            40%{left: -200%;}
-            60%{left: -300%;}
-            80%{left: -400%;}
-            100%{left: 0%;}
-        }        
-        
-@keyframes indicating{
-            from{
-                left: -100%;
-            }
-            to{
-                left: 0;
-            }
-}  
+.bannerimage .backgoundcolor{
+    flex: 1;
+}
+.bannerimage img{
+    width: 100%;
+    height: 450px;
+}
+.sliderpart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 450px;
+}
+.backgoundcolor{
+    background-color: #63A9B2;
+    width: 100%;
+    height: 450px;
+}
+.backgoundcolor p{
+    color: white;
+    line-height: 1.5em;
+    font-size: 30px;
+    margin-top: 110px;
+    text-align: center;
+}
 .about_detail{
     display: inline-block;
     width: 65%;
@@ -157,10 +147,11 @@ div#slider figure {
 p.underline::after {
   content: ""; /* Required for pseudo-element */
   position: absolute;
+  top: 100%;
   left: 0;
   bottom: 0;
   width: 100%; /* Full width of paragraph */
-  height: 6px; /* Thickness of the line */
+  height: 10px; /* Thickness of the line */
   background-color: #63A9B2; /* Line color */
 }
 .about_detail p{
@@ -253,6 +244,7 @@ section.product-type-section::before {
     filter: blur(2px); /* Blur effect */
     transform: scale(1.1); /* Prevents edges from showing */
     z-index: -1; /* Keep it behind content */
+    background-size: cover;  
 }
 .product-type-container p{
       color: white;
@@ -402,6 +394,7 @@ a{
 .intro_image1{
     display: flex;
     box-shadow: rgb(99, 169, 178) 0px 4px 18px;
+    margin-top: 30px;
 }
 .intro_image2{
     display: flex;
@@ -438,6 +431,20 @@ a{
 .about_company{
     font-size: 1.2em;
 
+}
+.about_section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+p.backgroundpahra::after {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width of paragraph */
+  height: 10px; /* Thickness of the line */
+  background-color: #63A9B2; /* Line color */
 }
 
 
