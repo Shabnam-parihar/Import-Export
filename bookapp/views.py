@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def home(request):
     
     
@@ -9,3 +10,7 @@ def about(request):
     
     
     return render(request, "about-us.html")
+def gst(request):
+    
+    
+    return render(request, "gst.html")

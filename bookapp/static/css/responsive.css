@@ -1,0 +1,392 @@
+/* =====================================================
+   GLOBAL FIXES
+===================================================== */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* =====================================================
+   LARGE DESKTOP ≤1400px
+===================================================== */
+@media (max-width: 1024px) {
+  .content {
+    max-width: 1200px;
+  }
+}
+/* =====================================================
+   DESKTOP / LAPTOP ≤1200px
+===================================================== */
+@media (max-width: 1200px) {
+   .content {
+    max-width: 1400px;
+  }
+ .secondheader{
+    flex-wrap: unset;
+ }
+  .about_heading {
+    font-size: 60px;
+  }
+
+  .sliderpart {
+    height: auto;
+  }
+
+  .backgoundcolor p {
+    font-size: 24px;
+  }
+}
+
+/* =====================================================
+   TABLET ≤992px
+===================================================== */
+@media (max-width: 992px) {
+
+  /* ---------- HEADER ---------- */
+  .contactuscontainer {
+    padding-left: 200px;
+  }
+  .secondheader {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header2right {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .socialmediaheader {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* ---------- SLIDER ---------- */
+  .sliderpart {
+    flex-direction: column;
+  }
+
+  .bannerimage,
+  .backgoundcolor {
+    width: 100%;
+  }
+
+  .backgoundcolor {
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about_detail,
+  .about_heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about_heading {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+
+  /* ---------- TEAM ---------- */
+  .intro_image1,
+  .intro_image2 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro_image1 img,
+  .intro_image2 img {
+    margin: 30px 0 10px;
+  }
+
+  .intro_description {
+    margin: 20px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .aboutdetailcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactuscontainer {
+    padding-left: 0;
+  }
+}
+
+/* =====================================================
+   MOBILE ≤768px
+===================================================== */
+@media (max-width: 768px) {
+
+  /* ---------- TOP CONTACT BAR ---------- */
+
+  .headersection {
+    padding: 12px;
+  }
+
+  .header-contacts li {
+    padding: 4px 0;
+    white-space: normal;
+    font-size: 15px;
+  }
+
+  .header-contacts li::after {
+    display: none; /* remove vertical lines */
+  }
+
+  /* ========== MAIN HEADER ========== */
+  .secondheader {
+    padding: 16px 0;
+     display: flex;
+    flex-direction: row;          /* 👈 INLINE */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;              /* allow wrap if needed */
+    gap: 16px;
+  }
+
+  /* LOGO */
+  .logo {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .logo img {
+    width: 140px;
+    height: auto;
+  }
+
+  /* MENU LINKS */
+  .header2right {
+    align-items: center;
+    display: flex;
+    flex-direction: row;          /* 👈 INLINE */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .info {
+    text-align: center;
+    white-space: nowrap;
+    padding: 8px 10px;
+  }
+
+  .info a,
+  .info span {
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  /* REGISTRATION DROPDOWN */
+  .hover-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+  }
+
+  /* SOCIAL ICONS */
+  .socialmediaheader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 10px;
+    flex: 0 0 auto;
+  }
+
+  /* ========== MAIN CONTENT OFFSET (FIXED HEADER) ========== */
+  .maintag {
+    padding-top: 320px; /* adjust if header height changes */
+  }
+
+
+  .backgoundcolor p {
+    font-size: 18px;
+    text-align: left;
+  }
+  .backgoundcolor p {
+    font-size: 18px;
+    text-align: left;
+  }
+  .containerheader ul li {
+    white-space: normal;
+  }
+  .sliderpart {
+    flex-direction: column;
+  }
+
+  .bannerimage,
+  .backgoundcolor {
+    width: 100%;
+    min-width: 0;
+  }
+  .circle-card {
+    width: 100%;
+    max-width: 250px;
+    margin: 24px auto;   /* center */
+    display: block;
+  }
+
+  .header-contacts li::after {
+    display: none;
+  }
+
+  /* ---------- MAIN HEADER ---------- */
+ main.maintag {
+    padding-top: 260px; /* stacked header */
+  }
+
+  .sliderpart {
+    flex-direction: column;
+  }
+
+  .bannerimage,
+  .backgoundcolor {
+    width: 100%;
+  }
+
+  .backgoundcolor {
+    padding: 30px 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .logo img {
+    width: 140px;
+  }
+
+  .header2right {
+    gap: 12px;
+    align-items: center;
+  }
+
+  .info {
+    white-space: normal;
+  }
+
+  .info a,
+  .info span {
+    font-size: 16px;
+  }
+
+  /* ---------- SLIDER ---------- */
+  .auto-slider {
+    margin-top: 190px; /* fixed header space */
+  }
+
+  .backgoundcolor p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /* ---------- CATEGORIES ---------- */
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle-card {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  /* ---------- STEPS ---------- */
+  .steps {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .steps-number {
+    height: 60px;
+    width: 60px;
+  }
+
+  /* ---------- TEAM ---------- */
+  .teampahra {
+    width: 100%;
+    font-size: 18px;
+  }
+  .sliderpart {
+    flex-direction: column !important;
+    min-height: auto;
+  }
+
+  .bannerimage,
+  .backgroundcolor {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .bannerimage {
+    height: 240px; /* control image height */
+  }
+  .backgroundcolor {
+    padding: 25px 18px !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .backgroundcolor h1,
+  .backgroundcolor h2,
+  .backgroundcolor p {
+    text-align: center;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE ≤480px
+===================================================== */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .about_heading {
+    font-size: 38px;
+  }
+
+  .backgoundcolor p {
+    font-size: 18px;
+  }
+
+  .steps img {
+    max-width: 140px;
+  }
+
+  .fa {
+    font-size: 22px;
+    width: 36px;
+    padding: 8px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  section, div {
+    max-width: 100%;
+  }
+}
+

@@ -1,0 +1,223 @@
+/* ========================= */
+/* GLOBAL SAFETY FIX */
+/* ========================= */
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ========================= */
+/* ≤ 1200px */
+/* ========================= */
+@media (max-width: 1200px) {
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .header2right {
+    gap: 24px;
+  }
+
+  .about_detail {
+    width: 100%;
+  }
+
+  .about_heading {
+    display: none;
+  }
+}
+
+/* ========================= */
+/* ≤ 1024px (iPad landscape) */
+/* ========================= */
+@media (max-width: 1024px) {
+
+  .secondheader {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .header2right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .intro_image1,
+  .intro_image2 {
+    width: 100%;
+  }
+
+  .contactuscontainer {
+    padding-left: 40px;
+  }
+}
+
+/* ========================= */
+/* ≤ 768px (TABLET) */
+/* ========================= */
+@media (max-width: 768px) {
+
+  /* FIX FIXED HEADER GAP */
+  .maintag {
+    padding-top: 280px;
+  }
+
+  /* TOP CONTACT BAR */
+  .header-contacts ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header-contacts li::after {
+    display: none;
+  }
+
+  /* MAIN HEADER */
+  .secondheader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header2right {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .info {
+    white-space: normal;
+  }
+
+  .socialmediaheader {
+    margin-top: 12px;
+  }
+
+  /* SLIDER FIX */
+  .sliderpart {
+    flex-direction: column;
+  }
+
+  .backgoundcolor {
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .backgoundcolor p {
+    font-size: 20px;
+  }
+
+  /* ABOUT */
+  .aboutdetailcontainer {
+    flex-direction: column;
+  }
+
+  .contactuscontainer {
+    padding-left: 0;
+  }
+
+  /* TEAM SECTION */
+  .intro_image1,
+  .intro_image2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro_image1 img,
+  .intro_image2 img {
+    margin: 20px auto;
+  }
+}
+
+/* ========================= */
+/* ≤ 576px */
+/* ========================= */
+@media (max-width: 576px) {
+
+  .maintag {
+    padding-top: 300px;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  .circle-card {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .caption {
+    font-size: 18px;
+  }
+
+  .steps {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .steps-number {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* ========================= */
+/* ≤ 425px (MOBILE) */
+/* ========================= */
+@media (max-width: 425px) {
+
+  .maintag {
+    padding-top: 320px;
+  }
+
+  .header2right a,
+  .info span {
+    font-size: 18px;
+  }
+
+  .backgoundcolor p {
+    font-size: 18px;
+  }
+
+  .teampahra {
+    width: 100%;
+  }
+
+  .fa {
+    margin-right: 10px;
+  }
+}
+
+/* ========================= */
+/* ≤ 375px */
+/* ========================= */
+@media (max-width: 375px) {
+
+  .maintag {
+    padding-top: 340px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .steps img {
+    max-width: 140px;
+  }
+}

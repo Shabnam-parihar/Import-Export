@@ -6,52 +6,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> home</title>
         <link rel="stylesheet" href="{% static 'css/home-v2.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        <script src="{% static 'js/main.js' %}"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
     </head>
     <body>
-   
         <!-- Header Section -->
     <header id="headertag">
-        <div class="headersection">
-        <div class="content  flex-gap">
-            <div class="containerheader">
-                <nav>
-                    <ul >
-                         <li><img src="{% static 'images/email.png' %}" alt="eicon" width="150">thakur.raghvendra@outlook.com</li>
-                         <li><img src="{% static 'images/call.png' %}" alt="callicon" width="150" class="call">+91 7869243089</li>
-                    </ul>
-                 </nav>
-            </div>
-            <div class="header-links">
-                <a href="#about" class="link">About-us</a>
-                <a href="#target" class="link">certificates</a>
-            </div>
-        </div>
-        </div>
+                <div class="headersection " >
+                    <div class="content flex-gap">
+                        <div class="containerheader">
+                            <nav class="header-contacts">
+                                <ul >
+                                    <li class="emailsign"><a href="mailto:info@slaavno.com" class="headermail">info@slaavno.com</a></li>
+                                    <li class="phone"><img src="{% static 'images/handset2.png' %}" alt="eicon" width="150">UK +44 7776608345</li>
+                                    <li class="phone"><img src="{% static 'images/handset2.png' %}" alt="eicon" width="150">INDIA +91 7869243089</li>
+                                    <li class="whatsappno"><a href="https://wa.me/917869243089"><img src="{% static 'images/whatsapp.png' %}" alt="eicon" width="150" class="check"> +44 7776608345</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_image">
+                    <div class="content">
+                        <div class="secondheader">
+                            <div class="logo">
+                                <a href="https://www.example.com">
+                                    <img src="{% static 'images/slaavnologo.png' %}" alt="Click me" />
+                                </a>
+                            </div>
+                            <div class="header2right">
+                                <div class="info">
+                                    <a href="https://www.example.com">About Us</a>
+                                </div>
+                                <div class="info">
+                                    <a href="https://www.example.com">Products</a>
+                                </div>
+                                <div class="info">
+                                    <a href="https://www.example.com">How we work</a>
+                                </div>
+                                <div class="info infofa">
+                                    <span>Registrations</span>
+                                    <div class="hover-menu">
+                                        <a href="{% static 'files/GST.pdf' %}" target="_blank">GST registration</a>
+                                        <a href="{% static 'files/IEC.pdf' %}" target="_blank">IEC registration</a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="https://www.example.com" target="_blank">Contact us</a>
+                                </div>
+                            </div>
+                            <div class="socialmediaheader">
+                                <nav class="headersocialicon">
+                                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class=" fa fa-facebook"></a>
+                                    <a href="https://www.linkedin.com/" target="_blank" aria-label="linkedin" class=" fa fa-linkedin"></a>
+                                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" class="fa fa-instagram"></a>
+                                </nav>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
     </header>
     <!-- Main Content -->
     <main class="maintag">
         <section class="auto-slider">
-            <div id="slider">
-                <div class="sliderpart">
-                    <div class="bannerimage">
-                        <img src="{% static 'images/tradeagreement.jpg' %}" alt="Image">
+                    <div class="sliderpart">
+                        <div class="bannerimage">
+                            <img src="{% static 'images/tradeagreement.jpg' %}" alt="Image">
+                        </div>
+                        <div class="backgoundcolor">
+                            <div class="content">
+                                <p>
+                                Introducing <b><span style="font-family: 'Poppins', sans-serif;">Slaavno</span></b>, helping UK businesses to source Indian products at fair prices through 
+                                India and UK signed Comprehensive Economic and Trade Agreement (CETA) which eliminates tariff on 99% of India's exports to the UK, covering nearly 100% of trade value.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="backgoundcolor">
-                        <p class="backgroundpahra">
-                             India and UK have signed Comprehensive Economic and Trade Agreement (CETA) which eliminates tariff on 99% of India's exports to the UK, 
-                             covering nearly 100% of trade value. This helps to save more money.  
-                        </p>
-                       
-                    </div>
-                </div>
-                <div class="indicator"></div>
-            </div>
         </section>
-        <div class="content">
         <section id="about_banner">
-            <div class="content">
+            <div class="content flex-gap">
                 <div class="about_section">
                     <div class="about_detail">
                     <h1>About Us</h1>
@@ -75,20 +111,19 @@
                 </div>
             </div>
         </section>
-
         <section class="product-type-section">
-             <div class="content">
+            <div class="content">
                 <div class="product-type">
                     <div class="product-type-container">
                         <p>
                             <span class="headingspan">
-                                <strong class="product-type-heading">Unleash Your Creativity with Slavno!</strong>
+                                <strong class="product-type-heading">Unleash Your Creativity with Slaavno!</strong>
                             </span>
                             
                         </p>
                         <p>
                             "At"
-                            <strong>Slavno</strong>
+                            <strong>Slaavno</strong>
                             , we believe in turning imagination into reality. 
                             Explore our diverse range of high-quality products, 
                             designed to inspire students, artists, and professionals alike. 
@@ -113,53 +148,97 @@
             <div class="content">
                 <div class="category-container">
                     <figure class="circle-card">
-                       <img src="{% static 'images/stationary.jpg' %}" alt="eicon" width="200" class="round-circle">
-                       <figcaption class="caption">hello</figcaption>
+                       <img src="{% static 'images/stationary.jpg' %}" alt="Stationery products" class="round-circle">
+                       <figcaption class="caption">Stationary</figcaption>
                     </figure>
                     <figure class="circle-card">
-                       <img src="{% static 'images/footware.jpg' %}" alt="eicon" width="200" class="round-circle">
-                       <figcaption class="caption">Woro Diary</figcaption>
+                       <img src="{% static 'images/footware.jpg' %}" alt="footware" class="round-circle">
+                       <figcaption class="caption">Footwear</figcaption>
                     </figure>
                     <figure class="circle-card">
-                       <img src="{% static 'images/kitchenware.png' %}" alt="eicon" width="200" class="round-circle">
-                       <figcaption class="caption">Practical Notebook</figcaption>
+                       <img src="{% static 'images/kitchenware.png' %}" alt="kitchenware" class="round-circle">
+                       <figcaption class="caption">Kitchenware</figcaption>
                     </figure>
                     <figure class="circle-card">
-                       <img src="{% static 'images/toys.png' %}" alt="eicon" width="200" class="round-circle">
-                       <figcaption class="caption">A5 Premium Notebook</figcaption>
+                       <img src="{% static 'images/toys.png' %}" alt="toys" class="round-circle">
+                       <figcaption class="caption">Toys</figcaption>
                     </figure>
                    <figure class="circle-card">
-                       <img src="{% static 'images/foodgrains.jpg' %}" alt="eicon" width="200" class="round-circle">
-                       <figcaption class="caption">A4 Exercise Notebook</figcaption>
+                       <img src="{% static 'images/foodgrains.jpg' %}" alt="foodgrains" class="round-circle">
+                       <figcaption class="caption">Foodgrains</figcaption>
                    </figure>
                     <figure class="circle-card">
-                       <img src="{% static 'images/handicraft.png' %}" alt="eicon" width="200" class="round-circle">
-                       <figcaption class="caption">Spriral Notebook</figcaption>
+                       <img src="{% static 'images/handicraft.png' %}" alt="handicraft products" class="round-circle">
+                       <figcaption class="caption">Handicraft</figcaption>
                     </figure>
                     <figure class="circle-card">
-                       <img src="{% static 'images/blanket.png' %}" alt="eicon" width="200" class="round-circle">
-                       <figcaption class="caption">Practical Notebook</figcaption>
+                       <img src="{% static 'images/blanket.png' %}" alt="eicon" class="round-circle">
+                       <figcaption class="caption">Carpet, Blanket & Curtains</figcaption>
                     </figure>
                     <figure class="circle-card">
-                       <img src="{% static 'images/rice.png' %}" alt="eicon" width="200" class="round-circle">
-                       <figcaption class="caption">Practical Notebook</figcaption>
+                       <img src="{% static 'images/rice.png' %}" alt="Basmati rice" class="round-circle">
+                       <figcaption class="caption">Rice (Pusha Basmati Rice)</figcaption>
                     </figure>
+                </div>
+            </div>
+        </section>
+        <section id="steps-section">
+            <div class="steps-container">
+                <div class="content">
+                    <p class="steps-heading">Uncomplicated hassle-free process</p>
+                    <div class="steps-inner-main-container">
+                        <div class="steps">
+                            <img src="{% static 'images/step1.png' %}" alt="Basmati rice" class="step-img">
+                            <span class="steps-number">1</span>
+                            <p class="text">Initial Discussion- To understand your requirement, 
+                                we can either set up a call or send us via an email or chat</p>
+                        </div>
+                        <div class="steps">
+                                <img src="{% static 'images/step2.jpg' %}" alt="Basmati rice" class="step-img">
+                            <span class="steps-number">2</span>
+                            <p  class="text">Based on your demand, our team will find and visit the certified sources from our network or
+                                 connect with the new authorized sources if they are not in our list</p>
+                        </div>
+                        <div class="steps">
+                                <img src="{% static 'images/step3.jpg' %}" alt="Basmati rice" class="step-img">
+                            <span class="steps-number">3</span>
+                            <p>Then we will share a detailed report, which includes costing, documentation, 
+                                and Incoterms (mutually agreed), within a few weeks</p>
+                        </div>
+                        <div class="steps">
+                                <img src="{% static 'images/step4.png' %}" alt="Basmati rice" class="step-img">
+                            <span class="steps-number">4</span>
+                            <p  class="text">Once you are satisfied with our report and need a sample then we can provide you a sample</p>
+                        </div>
+                        <div class="steps">
+                                <img src="{% static 'images/step5.jpg' %}" alt="Basmati rice" class="step-img">
+                            <span class="steps-number">5</span>
+                            <p  class="text">Payment (Using SWIFT code) our bank has global offices in the UK</p>
+                        </div>
+                        <div class="steps">
+                                <img src="{% static 'images/step6.jpg' %}" alt="Basmati rice" class="step-img">
+                            <span class="steps-number">6</span>
+                            <p  class="text">Shipment (Via ocean, or air, depend on our product and urgency)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="intro_section">
             <div class="content">
-                <h2>Our Team</h2>
-                    <p>
+                <h2 class="backgroundpahra">Our Team</h2>
+                    <p class="teampahra">
                         We are passionate about connecting businesses to global opportunity, 
                         and this passion led to the founding of Slaavno by Raghvendra and Shabnam.
                     </p>
                 <div class="intro_image1">
                     <div class="intro_image">
-                        <img src="{% static 'images/intro.jpg' %}" alt="eicon">
+                         
+                        <img src="{% static 'images/raghvendra.jpg' %}" alt="eicon">
+                        <p class="raghvendramail"><a  href="mailto:example@email.com">raghvendra.thakur@slaavno.com</a></p>
                     </div>
+                    
                     <div class="intro_description">
-
                         <p>
                                 Raghvendra has over 5 years of work experience in global business development and as a sports trader, 
                                 Level-6, with Entain Group and William Hill, London, UK. 
@@ -175,73 +254,79 @@
                             She brought a wealth of experience in information technology. 
                             She has over 4 years of professional experience in computer applications, where she helped businesses to solve complex technical issues. ‘I am actively involved in international trade and exploring the details of tariffs. 
                             I make sure I understand all the technical aspects, which allow me to confidently advise our customers.
-                            ’ She graduated with a Master of Science in Computer Application from a recognized university in India.
+                            ’ She postgraduated with a Master of Science in Computer Application from a recognized university in India.
                         </p>
                     </div>
                     <div class="intro_image">
                        <img src="{% static 'images/intro.jpg' %}" alt="eicon">
+                       <p class="shabnammail"><a  href="mailto:example@email.com">shabnam.parihar@slaavno.com</a></p>
+                        <p></p>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="content">
-        <section class="aboutusection" id="about" >
-            <div class="aboutdetailcontainer">
-            <div class="aboutuscontainer">
-                <div class="paharagraph">
-                    <p> 
-                       <b>Company Registration no.</b>- BHOP241114SE005417
-                    </p>
-                    <p>
-                        <b>GST no.</b>- 23AQCPT6455G1ZQ
-                    </p>
-                    <p>
-                        <b>IEC code</b>- AQCPT6455G
-                    </p>
-                    <p class="about_company"><b>Slaavno is a trading name of XIport</b></p>
-                </div>
-            </div>
-            <div class="contactuscontainer">
-                <div class="heading">
-                    <h2>Connect with us</h1>
-                </div>
-                <div class="contactdetail">
-                    <ul>
-                        <li>
-                            <img src="{% static 'images/email.png' %}" alt="eicon" width="150">thakur.raghvendra@outlook.com
-                        </li>   
-                    
-                        <li>
-                            <img src="{% static 'images/call.png' %}" alt="eicon" width="150" class="check">+91 7869243089
-                        </li>
-                    </ul>
-                </div>
-                <div class="socialmedia">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="fa fa-facebook"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank" aria-label="linkedin" class="fa fa-linkedin"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank" aria-label="Instagram" class="fa fa-instagram"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-        </section>
-        </div>
-        <section>
-            
-        </section>
         
+        <section class="aboutusection" id="about" >
+            <div class="content">
+                <div class="aboutdetailcontainer">
+                    <div class="aboutuscontainer">
+                        <div class="paharagraph">
+                            <p> 
+                            <b>Company Registration no.</b>- BHOP241114SE005417
+                            </p>
+                            <p>
+                                <b>GST no.</b>- 23AQCPT6455G1ZQ
+                            </p>
+                            <p>
+                                <b>IEC code</b>- AQCPT6455G
+                            </p>
+                            <p class="about_company"><b>Slaavno is a trading name of XIport</b></p>
+                        </div>
+                    </div>
+                    <div class="contactuscontainer">
+                    <div class="heading">
+                        <h2>Connect with us</h1>
+                    </div>
+                    <div class="contactdetail">
+                        <ul>
+                            <li>
+                                <img src="{% static 'images/address.png' %}" alt="eicon" width="150"><a href="mailto:info@slaavno.com" class="footerrmail">info@slaavno.com</a>
+                            <li>
+                                <img src="{% static 'images/tel.png' %}" alt="eicon" width="150" class="check">+44 7776608345
+                            </li>  
+                            
+                            <li>
+                                <img src="{% static 'images/tel.png' %}" alt="eicon" width="150" class="check">+91 7869243089
+                            </li>
+                             <li>
+                                <img src="{% static 'images/whatsapp.png' %}" alt="eicon" width="150" class="check">+44 7776608345
+                            </li>  
+                            <li>
+                                <img src="{% static 'images/mail.png' %}" alt="eicon" width="150">Plot no. 13, Chandrika Society, Beside Rohit Nagar Phase-1, Bhopal, Madhya Pradesh, India, 462039
+                            </li>   
+                        </ul>
+                    </div>
+                    <div class="socialmedia">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="fa fa-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" aria-label="linkedin" class="fa fa-linkedin"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" aria-label="Instagram" class="fa fa-instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
     <!-- Footer Section -->
     <footer class="footersection">
         <p>&copy; 2025 My Website. All rights reserved.</p>
     </footer>
-    </div>
     </body>
 </html>

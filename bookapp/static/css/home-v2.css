@@ -2,46 +2,133 @@ body {
     font-family: "DM Serif Display", "Odoo Unicode Support Noto", serif;
     min-height: 100%;
     font-size: 18px; 
-    overflow-x: hidden; 
+    width: 100%;
+    top: 0;
+    
+}
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+  max-width: 100%;
+  
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    word-break: break-word;
+  overflow-wrap: break-word;
 }
+section {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1, h2, p {
+  word-wrap: break-word;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .content{
     max-width: 1400px; /* Set your content width */
     margin: 0 auto;   /* Center the content */ 
     
 }
-:root {
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --breakpoint-xxl: 1400px;
+.emailsign{
+     list-style: none;
+  padding-left: 28px;
+  position: relative;
 }
+.emailsign::before {
+  content: "✉";        /* U+2709 */
+  color: #fff;
+  font-size: 16px;
+   margin-right: 8px;
+ 
+}
+.whatsappno a{
+    color: white;
+
+}
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+.headermail{
+    color: #f0f0f0;
+}
+.footerrmail{
+    color: black;
+}
+
+.header-contacts li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  position: relative;
+  color: #fff;
+}
+
+/* vertical line */
+.header-contacts li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 16px;
+  width: 3px;
+  background-color: white;
+}
+
+/* remove line after last item */
+.header-contacts li:last-child::after {
+  display: none;
+}
+
 .maintag{
     position: relative;
-    z-index: 1;   
+    z-index: 1;  
+    top: 0;
+    padding-top: 228px;
 }
-header{
-  position:fixed; /* Keeps header on top */
+#headertag{
+  position: fixed; /* Keeps header on top */
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px; /* Example height */
   background-color: #63A9B2;
   z-index: 1000; /* Ensures header stays above content */
+
+}
+.headersection img{
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 .flex-gap{
     display: flex;
-    gap: 600px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.headersocialicon{
+    display: flex;
+    align-items: center;     /* ✅ vertical center */
 }
 .header-links{
     display: flex;
     gap: 80px;
+    flex-wrap: wrap;
 }
 .link{
     color: white;
@@ -49,10 +136,15 @@ header{
     text-decoration: none;
 }
 .headersection{
-    margin-top: 20px;
+    background-color: #63A9B2;
+  flex-wrap: wrap;          /* 🔥 allow wrapping */
+  gap: 10px;
+  padding: 8px 12px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .containerheader{
-    float: left;
+    display: flex;
     margin-right: 12px;
     display: flex;
     gap: 12px;
@@ -67,11 +159,6 @@ header{
      vertical-align: middle;
 
 }
-.containerheader ul li img{
-    width: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
 .headingspan{
     font-size: calc(1.425rem + 2.1vw);
 }
@@ -81,8 +168,8 @@ header{
     border-radius: 0.4rem;
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin: 1rem auto;
+    max-width: 700px;
 }
 .subcontainer h2{
     font-family: "DM Serif Display", "Odoo Unicode Support Noto", serif;
@@ -92,34 +179,43 @@ header{
 .subcontainer{
     text-align: center;
 }
-#slider{
-    padding-top: 100px;
+.auto-slider {
+    display: flex;
+  width: 100%;
 }
+
 .bannerimage{
-    width: 100%;
-}
-.bannerimage .backgoundcolor{
     flex: 1;
+    min-width: 0;
+    overflow: hidden;
 }
 .bannerimage img{
     width: 100%;
-    height: 450px;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 .sliderpart{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 450px;
+    display: flex;
+    width: 100%;  
+    max-width: 100%;
 }
 .backgoundcolor{
+    width: 50%;
     background-color: #63A9B2;
-    width: 100%;
-    height: 450px;
+   flex: 1;
+  color: #fff;
+  box-sizing: border-box;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* 👈 IMPORTANT */
 }
 .backgoundcolor p{
     color: white;
     line-height: 1.5em;
     font-size: 30px;
-    margin-top: 110px;
     text-align: center;
 }
 .about_detail{
@@ -177,21 +273,21 @@ p.underline::after {
   /* Circular card container */
   .circle-card {
     width: 250px;              /* Card size */
-    height: 250px;
     overflow: hidden;          /* Ensures image stays inside */
     box-shadow: 0 4px 18px #63A9B2; /* Optional shadow */
     display: inline-block;
-    margin-right: 30px;
+    margin-left: 80px;
     margin-top: 80px;
   }
   .caption{
     text-align: center;
     font-weight: bold;
     font-size: 22px;
+    padding: 12px;
   }
   .circle-card img{
     width: 100%;
-    height: 200px;
+    height: 250px;
   }
   
 .category-container ul li{
@@ -252,7 +348,7 @@ section.product-type-section::before {
       line-height: 1.8;
 }
 .footersection{
-    position: fixed;  
+     position: relative;  
     bottom: 0;            /* Stick to the top */
     left: 0;
     width: 100%;         
@@ -263,7 +359,6 @@ section.product-type-section::before {
     z-index: 1000;
 }
 .paharagraph {
-    width: 500px;              /* Fixed width container */
     word-wrap: break-word;     /* Break long words if needed */
     overflow-wrap: break-word;
     white-space: normal;
@@ -275,20 +370,21 @@ section.product-type-section::before {
     margin-right: 8px;
 }
 .containerheader ul li{   /* Keeps it in place */       
-    padding: 20px;
+    padding: 10px;
     list-style: none;
     font-weight: bold;
     vertical-align: middle;
-    width: 100%;
+    width: auto;
+    white-space: nowrap;
 }
 
 .bannersection{
-    padding-top: 80px;
     margin-bottom: 40px;
 }
 .bannercontainer{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .bannerright{
     width: 30%;
@@ -349,9 +445,7 @@ section.product-type-section::before {
     padding-left: 200px;
 }
 .aboutdetailcontainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: flex;
 }
 .contactdetail ul li{
     list-style: none;
@@ -369,9 +463,9 @@ a{
 }
 .fa{
   border-radius: 50%;
-  padding: 15px;
-  font-size: 40px;
-  width: 50px;
+  padding: 10px;
+  font-size: 28px;
+  width: 42px;
   text-align: center;
   text-decoration: none;
   margin-right: 20px;
@@ -394,39 +488,61 @@ a{
 .intro_image1{
     display: flex;
     box-shadow: rgb(99, 169, 178) 0px 4px 18px;
-    margin-top: 30px;
+    align-items: flex-start;
+  gap: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 80%;
+  
 }
 .intro_image2{
     display: flex;
     box-shadow: rgb(99, 169, 178) 0px 4px 18px;
     margin-top: 100px;
+    width: 80%; 
+}
+.intro-image {
+  width: 140px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.intro {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .intro_image1 img{
-     width: 200px;
-     margin-right: 40px;
-     vertical-align: middle;
-       margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 120px;
+    width: 100%;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-left: 40px;
+    max-width: 150px;
+    display: block;
 }
 .intro_image2 img{
-    width: 200px;
+    width: 100%;
+    max-width: 150px;
     margin-left: 40px;
     vertical-align: middle;
     margin-top: 50px;
-    margin-bottom: 50px;
-    
 }
 .intro_image2 p{
-        margin-left: 220px;
+        margin-left: 40px;
 }
 .intro_description{
-    vertical-align: middle;
-    margin-top: 60px;
+    flex: 1;
+  line-height: 1.6;
 }
-.intro_description p {
+
+.intro_description p,
+.paharagraph{
   line-height: 1.8; /* 1.8 times the font size */
-  width: 800px;
+   width: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+    white-space: normal;
 }
 .about_company{
     font-size: 1.2em;
@@ -436,21 +552,164 @@ a{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-p.backgroundpahra::after {
+.backgroundpahra::after {
   content: ""; /* Required for pseudo-element */
   position: absolute;
-  top: 100%;
   left: 0;
   bottom: 0;
   width: 100%; /* Full width of paragraph */
   height: 10px; /* Thickness of the line */
   background-color: #63A9B2; /* Line color */
 }
+.backgroundpahra{
+      font-size: 35px;
+}
+.teampahra{
+    margin-top: 20px;
+    font-size: 23px;
+    width: 80%;
+}
+.shabnammail{
+    margin-bottom: 50px;
+     margin-top: 10px;
+}
+.shabnammail a {
+  display: inline-block;
+  margin-top: 10px;
+  word-break: break-all;
+}
+.raghvendramail{
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
 
+}
+.shabnammail a{
+    color: black;
+}
+.raghvendramail a{
+    color: black;
+}
+.logo img{
+    width: 180px;
+    height: auto;
+    vertical-align: middle;
+}
+.logo_image{
+    background-color: white;
+    
+}
 
+.logo a{
+    width: 30px;
+}
+.secondheader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* 🔑 VERY IMPORTANT */
+  gap: 12px;
+}
+.logo{
+    width: 15%;
+}
+.header2right{
+    display: flex;
+    gap: 40px;
+}
+.info a{
+     
+     color: #63A9B2;
+     font-weight: bold;
+     font-size: 20px;
+     display: inline-flex;   /* or flex */
+     align-items: center;    /* vertical center */
+}
+.info span{
+     
+     color: #63A9B2;
+     font-weight: bold;
+     font-size: 20px;
+     display: inline-flex;   /* or flex */
+     align-items: middle;    /* vertical center */
+}
+.info{  
+    padding: 12px 8px;
+  min-height: 48px;
+  
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;   
+}
+.infofa {
+    position: relative;
+}
+.hover-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hover-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color:#63A9B2;
+}
 
+.hover-menu a:hover {
+    background: #f0f0f0;
+}
 
+/* 🔥 Show on hover */
+.infofa:hover .hover-menu {
+    display: block;
+}
+.steps-inner-main-container{
+    line-height: 20px;
+}
+.steps{
+    display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.steps-number {
+  min-width: 60px;
+  height: 80px;
+  background: #6aaeb5;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps img {
+  max-width: 180px;
+  height: auto;
+}
 
-
-
-
+p.steps-heading{
+    text-align: center;
+    margin-bottom: 80px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+}
+.steps-description p{
+    font-size: 25px;
+    line-height: 20px;
+}
+.steps-container{
+    width: 100%;
+  max-width: 1400px;   /* standard website width */
+  margin: 0 auto;      /* center section */
+  padding: 40px 20px;
+}
+p.text {
+  vertical-align: middle;
+}
