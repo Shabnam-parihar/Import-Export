@@ -1,12 +1,16 @@
-function adjustMainPadding() {
-  const header = document.getElementById("headertag");
-  const main = document.querySelector("main.maintag");
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("mobileMenu");
 
-  if (header && main) {
-    const headerHeight = header.offsetHeight;
-    main.style.paddingTop = headerHeight + "px";
-  }
-}
+  if (!hamburger || !menu) return;
 
-window.addEventListener("load", adjustMainPadding);
-window.addEventListener("resize", adjustMainPadding);
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+});

@@ -1,10 +1,10 @@
 body {
     font-family: "DM Serif Display", "Odoo Unicode Support Noto", serif;
-    min-height: 100%;
     font-size: 18px; 
     width: 100%;
-    top: 0;
-    
+  min-height: 100%;   /* ✅ REQUIRED */
+  margin: 0;
+  
 }
 html {
     scroll-behavior: smooth;
@@ -21,8 +21,7 @@ html {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    word-break: break-word;
-  overflow-wrap: break-word;
+    
 }
 section {
   width: 100%;
@@ -40,6 +39,7 @@ img {
 .content{
     max-width: 1400px; /* Set your content width */
     margin: 0 auto;   /* Center the content */ 
+    min-height: auto;
     
 }
 .emailsign{
@@ -66,9 +66,8 @@ img {
     color: #f0f0f0;
 }
 .footerrmail{
-    color: black;
+    color: white;
 }
-
 .header-contacts li {
   list-style: none;
   display: flex;
@@ -90,6 +89,17 @@ img {
   width: 3px;
   background-color: white;
 }
+.footer-email {
+    display: flex;
+    align-items: flex-start; /* icon aligns with first line */
+    color: #fff;
+}
+.footer-email::before{
+    content: "✉";
+    color: #fff;
+    font-size: 20px;
+    margin-right: 8px;
+}
 
 /* remove line after last item */
 .header-contacts li:last-child::after {
@@ -97,21 +107,21 @@ img {
 }
 
 .maintag{
-    position: relative;
     z-index: 1;  
-    top: 0;
-    padding-top: 228px;
+    min-height: auto;
+    flex: 1; 
+    display: block;
+    padding-top: 140px;
 }
 #headertag{
-  position: fixed; /* Keeps header on top */
+   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #63A9B2;
-  z-index: 1000; /* Ensures header stays above content */
-
+  z-index: 9999;
 }
-.headersection img{
+.containerheader img{
     width: 18px;
     vertical-align: middle;
     margin-right: 8px;
@@ -135,7 +145,7 @@ img {
     font-weight: bold;
     text-decoration: none;
 }
-.headersection{
+.containerheader{
     background-color: #63A9B2;
   flex-wrap: wrap;          /* 🔥 allow wrapping */
   gap: 10px;
@@ -348,15 +358,12 @@ section.product-type-section::before {
       line-height: 1.8;
 }
 .footersection{
-     position: relative;  
-    bottom: 0;            /* Stick to the top */
-    left: 0;
-    width: 100%;         
-    background-color:#63A9B2;
+    position: relative;
+    width: 100%;
+    background-color: #63A9B2;
     color: white;
-    text-align: center;
-    padding: 20px;
-    z-index: 1000;
+    padding: 60px 20px;
+    display: block;
 }
 .paharagraph {
     word-wrap: break-word;     /* Break long words if needed */
@@ -424,12 +431,14 @@ section.product-type-section::before {
     text-decoration: none;
 }
 .aboutuscontainer{
-    margin-top: 60px;
     display: inline-block;
 }
-.contactuscontainer{
-    display: inline-block;
-    margin-top: 60px;
+footer .aboutdetailcontainer {
+  display: flex;
+  justify-content: flex-start; /* LEFT */
+  align-items: flex-start;     /* TOP */
+  gap: 300px;
+  flex-wrap: wrap;
 }
 .checkclass{
     padding-top: 10px;
@@ -439,13 +448,10 @@ section.product-type-section::before {
     width: 20px;
     vertical-align: middle;
     margin-right: 8px;
-
-}
-.contactuscontainer{
-    padding-left: 200px;
 }
 .aboutdetailcontainer{
     display: flex;
+    gap: 300px;
 }
 .contactdetail ul li{
     list-style: none;
@@ -482,24 +488,24 @@ a{
   background: #63A9B2;
   color: white;
 }
-.aboutusection{
-    padding-bottom: 80px;
-}
 .intro_image1{
     display: flex;
     box-shadow: rgb(99, 169, 178) 0px 4px 18px;
     align-items: flex-start;
-  gap: 20px;
   max-width: 100%;
   box-sizing: border-box;
-  width: 80%;
+  width: 90%;
+  margin-top: 40px;
+  padding: 20px;
   
 }
 .intro_image2{
     display: flex;
     box-shadow: rgb(99, 169, 178) 0px 4px 18px;
     margin-top: 100px;
-    width: 80%; 
+    width: 90%; 
+    margin-bottom: 60px;
+    padding: 20px;
 }
 .intro-image {
   width: 140px;
@@ -526,7 +532,7 @@ a{
     max-width: 150px;
     margin-left: 40px;
     vertical-align: middle;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .intro_image2 p{
         margin-left: 40px;
@@ -536,12 +542,10 @@ a{
   line-height: 1.6;
 }
 
-.intro_description p,
 .paharagraph{
   line-height: 1.8; /* 1.8 times the font size */
    width: 100%;
     max-width: 800px;
-    margin-top: 50px;
     white-space: normal;
 }
 .about_company{
@@ -552,15 +556,6 @@ a{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.backgroundpahra::after {
-  content: ""; /* Required for pseudo-element */
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%; /* Full width of paragraph */
-  height: 10px; /* Thickness of the line */
-  background-color: #63A9B2; /* Line color */
-}
 .backgroundpahra{
       font-size: 35px;
 }
@@ -570,12 +565,10 @@ a{
     width: 80%;
 }
 .shabnammail{
-    margin-bottom: 50px;
-     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .shabnammail a {
   display: inline-block;
-  margin-top: 10px;
   word-break: break-all;
 }
 .raghvendramail{
@@ -597,9 +590,12 @@ a{
 }
 .logo_image{
     background-color: white;
+  z-index: 1000;
+
+  align-items: center;
+  justify-content: space-between;
     
 }
-
 .logo a{
     width: 30px;
 }
@@ -607,7 +603,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* 🔑 VERY IMPORTANT */
+  flex-wrap: nowrap; /* 🔑 VERY IMPORTANT */
   gap: 12px;
 }
 .logo{
@@ -615,7 +611,10 @@ a{
 }
 .header2right{
     display: flex;
-    gap: 40px;
+    gap: 30px;
+}
+.hamburger {
+  display: none;
 }
 .info a{
      
@@ -712,4 +711,47 @@ p.steps-heading{
 }
 p.text {
   vertical-align: middle;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #6fb0b7;
+  border-radius: 3px;
+}
+.secondheader {
+  position: relative; /* ✅ REQUIRED */
+}
+.intro_section{
+    padding-bottom: 80px;
+}
+.paharagraph, .contactuscontainer{
+    flex: 1;
+    align-items: flex-start;
+}
+#authorities-section .authorities-list ul {
+    display: flex;
+    align-items: center;      /* vertically center images */
+    justify-content: center;  /* center items horizontally */
+    gap: 50px;                /* space between logos */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#authorities-section .authorities-list li img {
+    max-width: 300px;   /* adjust as needed */
+    height: auto;
+    display: block;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
