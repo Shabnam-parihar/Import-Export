@@ -62,6 +62,17 @@ img {
   display: flex;
   align-items: center;
 }
+.header-contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
 .headermail{
     color: #f0f0f0;
 }
@@ -76,6 +87,12 @@ img {
   padding: 0 12px;
   position: relative;
   color: #fff;
+
+  /* 🔥 ANDROID FIX */
+  min-width: 0;
+  flex: 1 1 auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 /* vertical line */
@@ -146,18 +163,15 @@ img {
     text-decoration: none;
 }
 .containerheader{
-    
+     display: flex;
+    margin-right: 12px;
     background-color: #63A9B2;
   flex-wrap: wrap;          /* 🔥 allow wrapping */
   gap: 10px;
   padding: 8px 12px;
   max-width: 100%;
   box-sizing: border-box;
-}
-.containerheader{
-    display: flex;
-    margin-right: 12px;
-    
+  overflow: visible;
 }
 .containerheader ul li{   /* Keeps it in place */       
     display: inline;
