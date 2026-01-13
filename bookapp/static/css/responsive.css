@@ -450,8 +450,6 @@ html, body {
   .header-contacts ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* ✅ 2 per row */
-    row-gap: 1px;                         /* ✅ gap between rows */
-    column-gap: 15px;
   }
 
   .header-contacts ul li {
