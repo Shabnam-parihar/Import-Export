@@ -25,6 +25,14 @@ nav a, footer a{
     color: #63A9B2 !important;
   -webkit-text-fill-color: #63A9B2  !important;
 }
+.shabnammail a{
+    color: #63A9B2 !important;
+  -webkit-text-fill-color: #63A9B2  !important;
+}
+.raghvendramail{
+    color: #63A9B2 !important;
+  -webkit-text-fill-color: #63A9B2  !important;
+}
 *,
 *::before,
 *::after {
