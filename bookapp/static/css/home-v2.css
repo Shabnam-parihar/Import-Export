@@ -13,13 +13,13 @@ html {
   
 }
 a {
-  color: black !important;
-  -webkit-text-fill-color: black;
+  color: white !important;
+  -webkit-text-fill-color: white;
 }
 header a,
 nav a, footer a{
-  color: black !important;
-  -webkit-text-fill-color: black !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
 }
 *,
 *::before,
