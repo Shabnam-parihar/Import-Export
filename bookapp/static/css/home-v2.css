@@ -146,6 +146,7 @@ img {
     text-decoration: none;
 }
 .containerheader{
+    
     background-color: #63A9B2;
   flex-wrap: wrap;          /* 🔥 allow wrapping */
   gap: 10px;
@@ -156,8 +157,7 @@ img {
 .containerheader{
     display: flex;
     margin-right: 12px;
-    display: flex;
-    gap: 12px;
+    
 }
 .containerheader ul li{   /* Keeps it in place */       
     display: inline;
@@ -660,9 +660,7 @@ a{
     color:#63A9B2;
 }
 
-.hover-menu a:hover {
-    background: #f0f0f0;
-}
+
 
 /* 🔥 Show on hover */
 .infofa:hover .hover-menu {

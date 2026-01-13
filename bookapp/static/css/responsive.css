@@ -133,7 +133,6 @@ html, body {
   .containerheader {
     padding: 12px;
   }
-
   .header-contacts li {
     padding: 4px 0;
     white-space: normal;
@@ -339,6 +338,9 @@ html, body {
     font-size: 15px;
     color: #2f6f73;
   }
+   .infofa.active .hover-menu {
+        display: block;
+   }
   /* Remove arrow on mobile */
   .hover-menu::before {
     display: none;
@@ -428,6 +430,11 @@ html, body {
   }
 }
 
+@media (min-width: 769px) {
+    .infofa:hover .hover-menu {
+        display: block;
+    }
+}
 /* =====================================================
    SMALL MOBILE ≤480px
 ===================================================== */
@@ -444,13 +451,13 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* ✅ 2 per row */
     row-gap: 1px;                         /* ✅ gap between rows */
-    column-gap: 4px;
+    column-gap: 15px;
   }
 
   .header-contacts ul li {
     display: flex;
     align-items: center;                   /* ✅ vertical middle */
-    gap: 6px;
+    gap: 1px;
     white-space: nowrap;
   }
 
@@ -599,4 +606,6 @@ html, body {
     margin: 10px 30px 10px;
     }
 }
+@media (max-width: 640px) { }
+
 

@@ -14,3 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function toggleMenu(el) {
+    el.classList.toggle('active');
+}
+
+function toggleMenu(el) {
+    if (window.innerWidth <= 768) {
+        el.classList.toggle('active');
+    }
+}
+
+document.addEventListener('click', function(e) {
+    document.querySelectorAll('.infofa').forEach(menu => {
+        if (!menu.contains(e.target)) {
+            menu.classList.remove('active');
+        }
+    });
+});
+
