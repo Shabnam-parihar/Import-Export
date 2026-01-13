@@ -21,6 +21,10 @@ nav a, footer a{
   color: white !important;
   -webkit-text-fill-color: white !important;
 }
+#mobileMenu a{
+    color: #63A9B2 !important;
+  -webkit-text-fill-color: #63A9B2  !important;
+}
 *,
 *::before,
 *::after {
