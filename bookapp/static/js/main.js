@@ -32,17 +32,22 @@ document.addEventListener('click', function(e) {
         }
     });
 });
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
 
-hamburger.addEventListener('click', (e) => {
-  e.stopPropagation(); // prevent immediate close
-  mobileMenu.classList.toggle('active');
-});
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const overlay = document.getElementById('menuOverlay');
 
-document.addEventListener('click', (e) => {
-  if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+  hamburger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    mobileMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
+  });
+
+  overlay.addEventListener('click', function () {
     mobileMenu.classList.remove('active');
-  }
+    overlay.classList.remove('active');
+  });
 });
+
 

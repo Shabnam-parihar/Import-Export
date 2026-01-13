@@ -26,12 +26,12 @@ nav a, footer a{
   -webkit-text-fill-color: #63A9B2  !important;
 }
 .shabnammail a{
-    color: #63A9B2 !important;
-  -webkit-text-fill-color: #63A9B2  !important;
+    color: black !important;
+  -webkit-text-fill-color: black  !important;
 }
-.raghvendramail{
-    color: #63A9B2 !important;
-  -webkit-text-fill-color: #63A9B2  !important;
+.raghvendramail a{
+    color: black !important;
+  -webkit-text-fill-color: black  !important;
 }
 *,
 *::before,
