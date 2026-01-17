@@ -362,6 +362,7 @@ html, body {
   .steps {
     flex-direction: column;
     text-align: center;
+    
   }
 
   .steps-number {
@@ -596,6 +597,16 @@ html, body {
   #authorities-section .authorities-list ul {
     gap: 20px;                /* space between logos */
 }
+.steps {
+    gap: 48px;
+    
+  }
+    .circle-card {
+        margin-left: 35px;
+    }
+     .hamburger span {
+      margin-bottom: 2px;
+    }
  
 }
 @media (min-width: 361px) and (max-width: 375px) {
