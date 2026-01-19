@@ -120,6 +120,12 @@ html, body {
     align-items: center;
     display: flex;
   }
+  .headingspan{
+    font-size: 28px;
+}
+  .headingspan{
+    font-size: 36px;
+}
 
 }
 
@@ -400,15 +406,25 @@ html, body {
   .backgroundcolor p {
     text-align: center;
   }
-  .raghvendramail {
-    margin-bottom: 0px;
-}
+    .team_member, .team_member.reverse {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .team_photo {
+        margin-bottom: 20px;
+    }
 .aboutdetailcontainer {
     display: block;
 }
 .contactuscontainer {
         padding-left: 0;
     }
+    
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
     footer .aboutdetailcontainer {
     flex-direction: column !important;
     gap: 0;
@@ -429,12 +445,39 @@ html, body {
     flex-direction: column;
     gap: 20px;   /* or 0 if you want no space */
   }
+   .headingspan{
+    font-size: 28px;
+}
+.product-type-container p{
+      font-size: 16px;
+}
+.about_section {
+        flex-direction: column; /* stack text above image */
+        align-items: flex-start; /* keep text left-aligned */
+    }
+
+    .about_heading {
+        width: 100%;             /* image takes full width */
+        display: flex;
+        justify-content: center;  /* optional: center image */
+        margin-top: 10px;         /* spacing between text and image */
+    }
+
+    .about_heading img {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;        /* adjust for mobile */
+        object-fit: cover;
+        border-radius: 6px;
+    }
+  
 }
 
 @media (min-width: 769px) {
     .infofa:hover .hover-menu {
         display: block;
-    }
+}
+
 }
 /* =====================================================
    SMALL MOBILE ≤480px
@@ -487,7 +530,6 @@ html, body {
   }
   .circle-card{
     flex: 0 0 100%;
-    margin-left: 60px;
   }
 
   .steps img {

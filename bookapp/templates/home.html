@@ -49,8 +49,8 @@
                                     <div class="info infofa" onclick="toggleMenu(this)">
                                         <span>Registrations</span>
                                         <div class="hover-menu">
-                                            <a href="{% static 'files/GST.pdf' %}" target="_blank">GST registration</a>
-                                            <a href="{% static 'files/IEC.pdf' %}" target="_blank">IEC registration</a>
+                                            <a href="{% static 'files/GST.pdf' %}" target="_blank" rel="noopener noreferrer">GST registration</a>
+                                            <a href="{% static 'files/IEC.pdf' %}" target="_blank" rel="noopener noreferrer">IEC registration</a>
                                         </div>
                                     </div>
                                     <div class="info">
@@ -79,14 +79,16 @@
         <section class="auto-slider">
                     <div class="sliderpart">
                         <div class="bannerimage">
-                            <img src="{% static 'images/tradeagreement.jpg' %}" alt="Image">
+                            <img src="{% static 'images/ind-uk-trade.jpg' %}" alt="Image">
                         </div>
                         <div class="backgoundcolor">
-                            <div class="content">
-                                <p>
-                                Introducing <b><span style="font-family: 'Poppins', sans-serif;">Slaavno</span></b>, helping UK businesses to source Indian products at fair prices through 
-                                India and UK signed Comprehensive Economic and Trade Agreement (CETA) which eliminates tariff on 99% of India's exports to the UK, covering nearly 100% of trade value.
-                                </p>
+                            <div class="content hero-content">
+                                <h1>Your India Sourcing Partner for the UK Market</h1>
+                                <p>Slaavno helps UK businesses source quality Indian products with transparency, 
+                                    competitive pricing, and export compliance.</p>
+                                <a href="#target" class="cta-btn">
+                                    Explore Product Categories
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -96,22 +98,27 @@
                 <div class="about_section">
                     <div class="about_detail">
                     <h1>About Us</h1>
-                    <p><b>Slaavno</b> is a growing Import-Export trading company based in India. 
-                        We act as a link between the manufacturers, suppliers, farmers, 
-                        & artisans in India and the buyers in the UK. 
-                        We are establishing our sourcing network to provide a wide range of products. 
-                        Currently, we are able to source multiple products in various categories; however, 
-                        if you are interested in a particular product that is not in our range, 
-                        we are happy to find it for you free of charge across India. 
-                        Simply share your product description and pictures with us.
+
+                    <p><b>Slaavno</b> is an India-based import–export trading company connecting reliable Indian manufacturers, suppliers, farmers, and artisans with businesses in the United Kingdom. We act as a trusted sourcing partner, 
+                        helping UK buyers access quality Indian products with confidence and ease.
                     </p>
-                    <p>
-                        <b>Mission—</b>We aim to provide high-standard-quality, safe, 
-                        and environmentally responsible products at a fair price from our certified sources and export them to the UK to our valued customers.
+
+                    <p>We simplify the sourcing process by managing supplier identification, product sourcing, price negotiations, quality coordination, and export documentation. 
+                        Our objective is to make importing from India transparent, efficient, and fully compliant with UK import standards.</p>
+                    <p>Slaavno operates as a merchant exporter, offering sourcing support across multiple product categories. If a product is not currently listed in our range, we are happy to source it across 
+                        India at no additional cost—simply share your product requirements and reference details with us.
+                    
+                        <h3>Our Mission</h3>
+
+                        <p>
+                           Our mission is to provide high-quality, safe, and responsibly sourced products that meet UK import standards at fair and competitive prices. We work closely with 
+                           certified and trusted suppliers to ensure consistency, reliability, and compliance throughout the export process.
+                        <p>By focusing on transparency, ethical sourcing, and dependable export practices, 
+                            Slaavno aims to build long-term partnerships with UK businesses seeking reliable sourcing solutions from India.
                     </p>
                     </div>
                     <div class="about_heading">
-                        <p class="underline">Import Export Trading company</p>
+                        <img src="{% static 'images/about-us-section-image.png' %}" alt="Import export logistics India to UK">
                     </div>
                 </div>
             </div>
@@ -122,17 +129,21 @@
                     <div class="product-type-container">
                         <p>
                             <span class="headingspan">
-                                <strong class="product-type-heading">Unleash Your Product Sourcing with Slaavno!</strong>
+                                <strong class="product-type-heading">Reliable Product Sourcing from India for UK Businesses</strong>
                             </span>
                             
                         </p>
                         <p>
                             At
                             <strong>"Slaavno"</strong>
-                            , we are committed to offering high-quality products sourced from authorized suppliers at reasonable prices. We maintain a wide array of sources,
-                             ranging from manufacturers to farmers throughout India, to meet your needs. Our team is capable of delivering products across various categories, including agriculture and textiles, 
-                            according to the 8-digit HS code, within a few weeks, along with a comprehensive report.
+                            , we help UK businesses source quality products from trusted Indian manufacturers, 
+                            suppliers, farmers, and artisans.
                         </p>
+                        <p>As a merchant exporter, we manage the complete sourcing process—from supplier identification and pricing to quality checks and export documentation—ensuring transparency, 
+                            compliance, and timely delivery.
+                        </p>
+                        <p>Whether you are sourcing a listed product or have a custom requirement, 
+                            our team can identify suitable suppliers across India and support you throughout the export process.</p>
                     </div>
                     <div class="maincontainer">
                         <div class="subcontainer">
@@ -146,36 +157,56 @@
             <div class="content">
                 <div class="category-container">
                     <figure class="circle-card">
-                       <img src="{% static 'images/stationary.jpg' %}" alt="Stationery products" class="round-circle">
-                       <figcaption class="caption">Stationary</figcaption>
+                       <img src="{% static 'images/stationary-category.png' %}" alt="Stationery products" class="round-circle">
+                       <figcaption class="caption"><p class="category-heading">Stationery</p>
+                        <ul class="product-list">
+                            <li>Paper & Notebook Products</li>
+                            <li>Eco-Friendly Stationery</li>
+                            <li>Office Files & Organisation</li>
+                             <li>Writing Instruments</li>
+                       </ul>
                     </figure>
                     <figure class="circle-card">
-                       <img src="{% static 'images/footware.jpg' %}" alt="footware" class="round-circle">
-                       <figcaption class="caption">Footwear</figcaption>
-                    </figure>
-                    <figure class="circle-card">
-                       <img src="{% static 'images/kitchenware.png' %}" alt="kitchenware" class="round-circle">
-                       <figcaption class="caption">Kitchenware</figcaption>
-                    </figure>
-                    <figure class="circle-card">
-                       <img src="{% static 'images/toys.png' %}" alt="toys" class="round-circle">
-                       <figcaption class="caption">Toys</figcaption>
+                       <img src="{% static 'images/kitchen-containers.png' %}" alt="kitchenware" class="round-circle">
+                       <figcaption class="caption"><p class="category-heading">Stainless Steel Storage & Containers</p>
+                            <ul class="product-list">
+                                    <li>Canisters</li>
+                                    <li>Lunch boxes</li>
+                                    <li>Food storage containers</li>
+                                    <li>Spice boxes</li>
+                                </ul>
+                       </figcaption>
                     </figure>
                    <figure class="circle-card">
-                       <img src="{% static 'images/foodgrains.jpg' %}" alt="foodgrains" class="round-circle">
-                       <figcaption class="caption">Foodgrains</figcaption>
+                       <img src="{% static 'images/home-decor.png' %}" alt="foodgrains" class="round-circle">
+                       <figcaption class="caption"><p class="category-heading">Home & Lifestyle Products</p>
+                            <ul class="product-list">
+                                <li>Candles & candle holders</li>
+                                <li>Trays, baskets</li>
+                                <li>Incense & accessories</li>
+                            </ul>
+                       </figcaption>
                    </figure>
                     <figure class="circle-card">
-                       <img src="{% static 'images/handicraft.png' %}" alt="handicraft products" class="round-circle">
-                       <figcaption class="caption">Handicraft</figcaption>
+                       <img src="{% static 'images/handcraft-category.png' %}" alt="handicraft products" class="round-circle">
+                       <figcaption class="caption"><p class="category-heading">Wooden Handicrafts</p>
+                            <ul class="product-list">
+                                <li>Decorative storage boxes</li>
+                                <li>Photo frames</li>
+                                <li>Desk organisers</li>
+                            </ul>
+                       </figcaption>
                     </figure>
                     <figure class="circle-card">
                        <img src="{% static 'images/blanket.png' %}" alt="eicon" class="round-circle">
-                       <figcaption class="caption">Carpet, Blanket & Curtains</figcaption>
-                    </figure>
-                    <figure class="circle-card">
-                       <img src="{% static 'images/rice.png' %}" alt="Basmati rice" class="round-circle">
-                       <figcaption class="caption">Rice (Pusha Basmati)</figcaption>
+                       <figcaption class="caption"><p class="category-heading">Textiles & Soft Furnishings</p> 
+                        <ul class="product-list">
+                            <li>Blankets</li>
+                            <li>Bedsheets</li>
+                            <li>Throws & rugs</li>
+                             <li>Table linen</li>
+                       </ul>
+                    </figcaption>
                     </figure>
                 </div>
             </div>
@@ -183,85 +214,95 @@
         <section id="steps-section">
             <div class="steps-container">
                 <div class="content">
-                    <p class="steps-heading">Uncomplicated hassle-free process</p>
+                    <p class="steps-heading">Uncomplicated & Hassle-Free Sourcing Process</p>
                     <div class="steps-inner-main-container">
                         <div class="steps">
                             <img src="{% static 'images/step1.png' %}" alt="Basmati rice" class="step-img">
                             <span class="steps-number">1</span>
-                            <p class="text">Initial Discussion- To understand your requirement, 
-                                we can either set up a call or send us via an email or chat</p>
+                             <h4 class="step-heading">Initial Consultation</h4>
+                            <p class="text">We begin by understanding your sourcing requirements. You can connect with us via a call,
+                                 email, or chat to discuss product specifications, quantities, timelines, and expectations.</p>
                         </div>
                         <div class="steps">
                                 <img src="{% static 'images/step2.jpg' %}" alt="Basmati rice" class="step-img">
                             <span class="steps-number">2</span>
-                            <p  class="text">Based on your demand, our team will find and visit the certified sources from our network or
-                                 connect with the new authorized sources if they are not in our list</p>
+                            <h4 class="step-heading">Supplier Identification</h4>
+                            <p  class="text">Based on your requirements, we identify suitable manufacturers or 
+                                suppliers from our existing partner base or carefully onboard new verified sources as needed.</p>
                         </div>
                         <div class="steps">
                                 <img src="{% static 'images/step3.jpg' %}" alt="Basmati rice" class="step-img">
                             <span class="steps-number">3</span>
-                            <p>Then we will share a detailed report, which includes costing, documentation, 
-                                and Incoterms (mutually agreed), within a few weeks</p>
+                            <h4 class="step-heading">Detailed Sourcing Report</h4>
+                            <p>Within a few weeks, we provide a comprehensive report covering product pricing, documentation, quality standards, 
+                                and mutually agreed Incoterms—ensuring full transparency.</p>
                         </div>
                         <div class="steps">
                                 <img src="{% static 'images/step4.png' %}" alt="Basmati rice" class="step-img">
                             <span class="steps-number">4</span>
-                            <p  class="text">Once you are satisfied with our report and need a sample then we can provide you a sample</p>
+                             <h4 class="step-heading">Sample Evaluation (Optional)</h4>
+                            <p  class="text">Once you are satisfied with the report, product samples can be arranged for evaluation if required, 
+                                before proceeding with bulk orders.</p>
                         </div>
                         <div class="steps">
                                 <img src="{% static 'images/step5.jpg' %}" alt="Basmati rice" class="step-img">
                             <span class="steps-number">5</span>
-                            <p  class="text">Payment (Using SWIFT code) our bank has global offices in the UK</p>
+                            <h4 class="step-heading">Secure Payment</h4>
+                            <p  class="text">Payments are processed securely via SWIFT transfer. Our banking partners have global operations, including offices in the UK, 
+                                ensuring reliability and ease of transaction.</p>
                         </div>
                         <div class="steps">
                                 <img src="{% static 'images/step6.jpg' %}" alt="Basmati rice" class="step-img">
                             <span class="steps-number">6</span>
-                            <p  class="text">Shipment (Via ocean, or air, depend on product and urgency)</p>
+                            <h4 class="step-heading">Shipment & Delivery</h4>
+                            <p  class="text">Shipment is arranged via air or sea freight based on the agreed Incoterms, product type, volume, 
+                                and urgency, ensuring compliance and timely delivery.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="intro_section">
-            <div class="content">
-                <h2 class="backgroundpahra">Our Team</h2>
-                    <p class="teampahra">
-                        We are passionate about connecting businesses to global opportunity, 
-                        and this passion led to the founding of Slaavno by Raghvendra and Shabnam.
-                    </p>
-                <div class="intro_image1">
-                    <div class="intro_image">
-                         
-                        <img src="{% static 'images/raghvendra.jpg' %}" alt="eicon">
-                        <p class="raghvendramail"><a  href="mailto:example@email.com">raghvendra.thakur@slaavno.com</a></p>
-                    </div>
-                    
-                    <div class="intro_description">
-                        <p>
-                                Raghvendra has over 5 years of work experience in global business development and as a sports trader, 
-                                Level-6, with Entain Group and William Hill, London, UK. 
-                                He finished his postgraduate study in Global Business and International Trade, Level-7, at Coventry University, London, UK, and Leeds Beckett University, Leeds, UK. 
-                                He has also achieved an export training certificate from the Federation of Indian Export Organizations (FIEO).
-                        </p>
-                    </div>
+        <section class="our_team_section">
+        <div class="content">
+            <h2 class="team_heading">Our Team</h2>
+            <p class="team_intro">
+                We are passionate about connecting businesses to global opportunity, 
+                and this passion led to the founding of Slaavno by Raghvendra and Shabnam.
+            </p>
+
+            <!-- Raghvendra -->
+            <div class="team_member">
+                <div class="team_photo">
+                    <img src="{% static 'images/raghvendra.jpg' %}" alt="Raghvendra Thakur">
+                    <p class="team_email"><a href="mailto:raghvendra.thakur@slaavno.com">raghvendra.thakur@slaavno.com</a></p>
                 </div>
-                <div class="intro_image2">
-                    <div class="intro_description shabnamdescription">
-                        <p>
-                            Shabnam is passionate about global trade and technology. 
-                            She brought a wealth of experience in information technology. 
-                            She has over 4 years of professional experience in computer applications, where she helped businesses to solve complex technical issues. ‘I am actively involved in international trade and exploring the details of tariffs. 
-                            I make sure I understand all the technical aspects, which allow me to confidently advise our customers.
-                            ’ She postgraduated with a Master of Science in Computer Application from a recognized university in India.
-                        </p>
-                    </div>
-                    <div class="intro_image shabnamimage">
-                       <img src="{% static 'images/shabnam.jpg' %}" alt="eicon" class="shabnammail">
-                       <p class="shabnammail"><a  href="mailto:example@email.com">shabnam.parihar@slaavno.com</a></p>
-                    </div>
+                <div class="team_info">
+                    <h4>Raghvendra Thakur</h4>
+                    <p>
+                        Raghvendra has over 5 years of work experience in global business development and as a sports trader, Level-6, with Entain Group and William Hill, London, UK. 
+                        He finished his postgraduate study in Global Business and International Trade, Level-7, at Coventry University, London, UK, and Leeds Beckett University, Leeds, UK. 
+                        He has also achieved an export training certificate from the Federation of Indian Export Organizations (FIEO).
+                    </p>
                 </div>
             </div>
-        </section>
+
+            <!-- Shabnam -->
+            <div class="team_member reverse">
+                <div class="team_photo">
+                    <img src="{% static 'images/shabnam.jpg' %}" alt="Shabnam Parihar">
+                    <p class="team_email"><a href="mailto:shabnam.parihar@slaavno.com">shabnam.parihar@slaavno.com</a></p>
+                </div>
+                <div class="team_info">
+                    <h4>Shabnam Parihar</h4>
+                    <p>
+                        Shabnam is passionate about global trade and technology. She has over 4 years of professional experience in computer applications, helping businesses solve complex technical issues. 
+                        ‘I am actively involved in international trade and exploring the details of tariffs. I make sure I understand all the technical aspects, which allow me to confidently advise our customers.’ 
+                        She postgraduated with a Master of Science in Computer Application from a recognized university in India.
+                    </p>
+                </div>
+            </div>
+        </div>
+   </section>
         <section id="authorities-section" class="clearfix">
             <div class="authorities-container">
                 <div class="content">
@@ -278,61 +319,60 @@
     </main>
     <!-- Footer Section -->
     <footer class="footersection aboutusection" id="contact-us">
-        <div class="content">
-                <div class="aboutdetailcontainer">
-                    <div class="aboutuscontainer">
-                        <div class="paharagraph">
-                            <p> 
-                            <b>Company Registration no.</b>- BHOP241114SE005417
-                            </p>
-                            <p>
-                                <b>GST no.</b>- 23AQCPT6455G1ZQ
-                            </p>
-                            <p>
-                                <b>IEC code</b>- AQCPT6455G
-                            </p>
-                            <p class="about_company"><b>Slaavno is a trading name of XIport</b></p>
-                        </div>
-                    </div>
-                    <div class="contactuscontainer">
-                    <div class="heading">
-                        <h2>Connect with us</h2>
-                    </div>
-                    <div class="contactdetail">
-                        <ul>
-                            <li class="footer-email">
-                                info@slaavno.com</a>
-                            </li>
-                            <li>
-                                <img src="{% static 'images/handset2.png' %}" alt="eicon" width="150" class="check">+44 7776608345
-                            </li>  
-                            
-                            <li>
-                                <img src="{% static 'images/handset2.png' %}" alt="eicon" width="150" class="check">+91 7869243089
-                            </li>
-                             <li>
-                                <img src="{% static 'images/whatsapp.png' %}" alt="eicon" width="150" class="check">+44 7776608345
-                            </li>  
-                            <li class="address">
-                                <p><img src="{% static 'images/address.png' %}" alt="eicon" width="150"><a href="mailto:info@slaavno.com" class="footerrmail"></a>Plot no. 13, Chandrika Society, Beside Rohit Nagar Phase-1, Bhopal, Madhya Pradesh, India, 462039</p>
-                            </li>   
-                        </ul>
-                    </div>
-                    <div class="socialmedia">
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/profile.php?id=61586544621909" target="_blank" aria-label="Facebook" class="fa fa-facebook"></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/slaavno/" target="_blank" aria-label="linkedin" class="fa fa-linkedin"></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/slaavno" target="_blank" aria-label="Instagram" class="fa fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="content footer-inner">
+
+            <!-- LEFT -->
+            <div class="aboutdetailcontainer">
+            <div class="paharagraph">
+                <p><b>Company Registration no.</b> – BHOP241114SE005417</p>
+                <p><b>GST no.</b> – 23AQCPT6455G1ZQ</p>
+                <p><b>IEC code</b> – AQCPT6455G</p>
+                <p class="about_company"><b>Slaavno is a trading name of XIport</b></p>
             </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="contactuscontainer">
+            <h2>Connect with us</h2>
+
+            <ul class="contactdetail">
+                <li>
+                <img src="{% static 'images/email.png' %}" alt="email" class="email-icon">
+                <a href="mailto:info@slaavno.com">info@slaavno.com</a>
+                </li>
+
+                <li>
+                <img src="{% static 'images/handset2.png' %}" alt="phone">
+                <a href="tel:+447776608345">+44 7776608345</a>
+                </li>
+
+                <li>
+                <img src="{% static 'images/handset2.png' %}" alt="phone">
+                <a href="tel:+917869243089">+91 7869243089</a>
+                </li>
+
+                <li>
+                <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp">
+                <a href="https://wa.me/447776608345" target="_blank">+44 7776608345</a>
+                </li>
+
+                <li class="address">
+                <img src="{% static 'images/address.png' %}" alt="address">
+                <span>
+                    Plot no. 13, Chandrika Society, Beside Rohit Nagar Phase-1,
+                    Bhopal, Madhya Pradesh, India, 462039
+                </span>
+                </li>
+            </ul>
+
+            <ul class="socialmedia">
+                <li><a href="https://www.facebook.com/profile.php?id=61586544621909" target="_blank" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.linkedin.com/company/slaavno/" target="_blank" class="fa fa-linkedin"></a></li>
+                <li><a href="https://www.instagram.com/slaavno" target="_blank" class="fa fa-instagram"></a></li>
+            </ul>
+            </div>
+
+        </div>
     </footer>
     </body>
 </html>
