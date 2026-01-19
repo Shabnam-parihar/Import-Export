@@ -33,5 +33,14 @@ document.addEventListener('click', function(e) {
     });
 });
 
+var hamburger = document.querySelector('.hamburger');
 
+hamburger.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+    document.body.classList.toggle('menu-open');
+}, { passive: false });
+
+hamburger.addEventListener('click', function () {
+    document.body.classList.toggle('menu-open');
+});
 

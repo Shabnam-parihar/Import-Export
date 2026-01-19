@@ -672,6 +672,10 @@ html, body {
 /* Medium phones */
 @media (max-width: 390px) {
   /* Pixel, iPhone 12/13 mini, newer Android */
+  .circle-card {
+        margin-left: 40px;
+        margin-top: 50px;
+    }
 }
 
 /* Large phones */
