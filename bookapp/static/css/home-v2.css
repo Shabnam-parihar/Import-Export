@@ -829,18 +829,24 @@ p.text {
   vertical-align: middle;
 }
 .hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .hamburger span {
-  width: 26px;
-  height: 3px;
-  background: #6fb0b7;
-  border-radius: 3px;
+    display: block;
+    height: 3px;
+    width: 25px;
+    background: #63A9B2;
+    margin-bottom: 5px; /* ✅ iOS SAFE */
 }
+
+/* remove extra space on last line */
+.hamburger span:last-child {
+    margin-bottom: 0;
+}
+
 .secondheader {
   position: relative; /* ✅ REQUIRED */
 }
