@@ -17,6 +17,9 @@ html, body {
   .maintag{
     padding-top: 120px;
 }
+.header2right {
+  gap: 0;
+}
 }
 /* =====================================================
    DESKTOP / LAPTOP ≤1200px
